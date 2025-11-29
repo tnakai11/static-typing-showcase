@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Typing: The Future is Safe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cursor-follower"></div>
+    
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="STATIC TYPING">STATIC TYPING</h1>
+            <p class="subtitle">秩序あるコード、堅牢な未来。</p>
+            <button class="cta-button">Explore Safety</button>
+        </div>
+        <div class="hero-background">
+            <!-- Abstract shapes will be generated here via JS -->
+        </div>
+    </header>
+
+    <main>
+        <section class="problem-section">
+            <div class="container">
+                <h2 class="section-title">The Chaos of <span class="danger-text">Dynamic</span></h2>
+                <div class="chaos-grid">
+                    <div class="chaos-card">
+                        <h3>Runtime Errors</h3>
+                        <p>undefined is not a function. 恐怖の予期せぬクラッシュ。</p>
+                    </div>
+                    <div class="chaos-card">
+                        <h3>Refactoring Hell</h3>
+                        <p>変更の影響範囲が見えない。修正が新たなバグを生む。</p>
+                    </div>
+                    <div class="chaos-card">
+                        <h3>Guesswork</h3>
+                        <p>この変数は何？ String? Number? ドキュメントは嘘をつく。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="solution-section">
+            <div class="container">
+                <h2 class="section-title">The Order of <span class="safe-text">Static</span></h2>
+                <div class="feature-row">
+                    <div class="feature-text">
+                        <h3>Compile-Time Safety</h3>
+                        <p>実行前にバグを撲滅。コンパイラはあなたの最高のペアプログラマー。</p>
+                    </div>
+                    <div class="feature-visual code-block">
+                        <pre><code class="language-typescript">function add(a: number, b: number): number {
+  return a + b;
+}
+
+add(1, "2"); // Error: Argument of type 'string' 
+             // is not assignable to parameter of type 'number'.</code></pre>
+                    </div>
+                </div>
+                
+                <div class="feature-row reverse">
+                    <div class="feature-text">
+                        <h3>Intelligent Autocomplete</h3>
+                        <p>IDEが思考を先読みする。APIを暗記する必要はもうない。</p>
+                    </div>
+                    <div class="feature-visual ide-mockup">
+                        <div class="ide-suggestion">
+                            <span>user.</span>
+                            <ul class="suggestion-list">
+                                <li>id <span class="type">number</span></li>
+                                <li>name <span class="type">string</span></li>
+                                <li>email <span class="type">string</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>Join the Cult of Safety</h2>
+            <p>TypeScript, Rust, Go... 選択肢は無限大。</p>
+            <div class="lang-icons">
+                <span class="lang-icon">TS</span>
+                <span class="lang-icon">Rs</span>
+                <span class="lang-icon">Go</span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Antigravity Design. Built for the Type Safe.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
